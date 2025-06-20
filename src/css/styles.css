@@ -1,18 +1,221 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+body {
+  font-family: Montserat, sans-serif;
+  background-color: #fafafa;
+}
+
+/* 1-timer */
+
+.list {
+  border: 3px solid rgb(159, 167, 53);
+  border-radius: 20px;
+  max-width: 400px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.link-item {
+  text-decoration: none;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: #0e1212;
+}
+
+.link-item:hover {
+  color: rgb(26, 161, 49);
+  
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.input-container {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    width: 272px;
+    height: 40px;
+    font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      color: #2e2f42;
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-right: 8px;
+}
+
+.input-container:hover {
+  border: 1px solid #000;
+}
+
+.input-container:focus {
+  border: 1px solid #4e75ff;
+  outline: transparent;
+}
+
+.input-container:disabled {
+  color: #808080;
+}
+
+.btn-container {
+  border-radius: 8px;
+    padding: 8px 16px;
+    width: 75px;
+    height: 40px;
+    border: none;
+    background: #4e75ff;
+    font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      color: #fff;
+      cursor: pointer;
+
+}
+
+.btn-container:hover {
+  background: #6c8cff;
+}
+
+.btn-container:disabled {
+  background: #cfcfcf;
+}
+
+.timer {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.value {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    text-align: center;
+}
+
+.label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2e2f42;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* 2-snackbar */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.label-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;   
+}
+
+.input-delay-form {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    max-width: 360px;
+    height: 40px;
+    margin-bottom: 16px;
+    padding-left: 16px;
+}
+
+.input-delay-form:hover {
+  border: 1px solid #000;
+}
+
+.input-delay-form:focus {
+  border: 1px solid #4e75ff;
+  outline: transparent;
+}
+
+.fieldset {
+    max-width: 360px;
+    height: 54px; 
+    margin-bottom: 24px;
+    border-radius: 4px;
+    stroke-width: 1px;
+    stroke: #808080;
+}
+
+.fieldset:hover {
+  stroke: #000;
+}
+
+.legend {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
+.radio-btn {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  padding-top: 12px;
+}
+
+.radio-label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2e2f42;
+}
+
+.btn-form {
+  border-radius: 8px;
+    padding: 8px 16px;
+    width: 360px;
+    height: 40px;
+    border: none;
+    background: #4e75ff;
+    font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      color: #fff;
+      cursor: pointer;
+}
+
+.btn-form:hover {
+  background: #6c8cff;
+}
